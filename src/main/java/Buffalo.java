@@ -2,7 +2,11 @@ public class Buffalo extends SauceDecorator {
 
     public Buffalo(Wings newWings) {
         super(newWings);
-        System.out.println("Adding buffalo sauce to order.");
+    }
+
+    // Returns getName() of PlainWings and concatenates the sauce name at the beginning
+    public String getName() {
+        return "Buffalo " + tempWings.getName();
     }
 
     // Returns getDescription() of PlainWings and concatenates the sauce at the end
@@ -12,7 +16,7 @@ public class Buffalo extends SauceDecorator {
 
     // Returns total cost of order
     public double getCost() {
-        System.out.println("Sauce: $" + 0.50);
+        System.out.println("Sauce Price: $" + 0.50);
         return tempWings.getCost() + 0.50;
     }
 

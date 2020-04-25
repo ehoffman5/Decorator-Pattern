@@ -9,6 +9,10 @@ abstract class SauceDecorator implements Wings {
         tempWings = newWings;
     }
 
+    public String getName() {
+        return tempWings.getName();
+    }
+
     public String getDescription() {
         return tempWings.getDescription();
     }

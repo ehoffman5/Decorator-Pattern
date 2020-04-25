@@ -2,6 +2,7 @@
 
 public interface Wings {
 
+    public String getName();
     public String getDescription();
     public double getCost();
 
