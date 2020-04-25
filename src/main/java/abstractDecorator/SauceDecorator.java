@@ -1,10 +1,13 @@
-// Each wing order 'has a' sauce
+package abstractDecorator;
 
-abstract class SauceDecorator implements Wings {
+import component.Wings;
+
+// Each wing order 'has a' sauce
+public abstract class SauceDecorator implements Wings {
 
     protected Wings tempWings;
 
-    // Sauces (Decorators) dynamically customize the PlainWings
+    // Sauces (Decorators) dynamically customize the concreteComponent.PlainWings
     public SauceDecorator(Wings newWings){
         tempWings = newWings;
     }

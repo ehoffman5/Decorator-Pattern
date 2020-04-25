@@ -1,15 +1,20 @@
+package concreteDecorators;
+
+import abstractDecorator.SauceDecorator;
+import component.Wings;
+
 public class Barbecue extends SauceDecorator {
 
     public Barbecue(Wings newWings) {
         super(newWings);
     }
 
-    // Returns getName() of PlainWings and concatenates the sauce name at the beginning
+    // Returns getName() of concreteComponent.PlainWings and concatenates the sauce name at the beginning
     public String getName() {
-        return "Barbecue " + tempWings.getName();
+        return "concreteDecorators.Barbecue " + tempWings.getName();
     }
 
-    // Returns getDescription() of PlainWings and concatenates the sauce at the end
+    // Returns getDescription() of concreteComponent.PlainWings and concatenates the sauce at the end
     public String getDescription() {
         return tempWings.getDescription() + " with smoky barbecue sauce.";
     }

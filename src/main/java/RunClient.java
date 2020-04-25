@@ -1,8 +1,14 @@
+import component.Wings;
+import concreteComponent.PlainWings;
+import concreteDecorators.Barbecue;
+import concreteDecorators.Buffalo;
+import concreteDecorators.Teriyaki;
+
 public class RunClient {
 
     public static void main(String[] args){
 
-        // The PlainWings object is sent to the sauce constructor upon instantiation
+        // The concreteComponent.PlainWings object is sent to the sauce constructor upon instantiation
 
         Wings buffaloWings = new Buffalo(new PlainWings());
         System.out.println("Menu Item: " + buffaloWings.getName());

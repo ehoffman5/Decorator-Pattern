@@ -1,9 +1,11 @@
-// Every Pizza made will start as a PlainPizza
+package concreteComponent;// Every Pizza made will start as a PlainPizza
+
+import component.Wings;
 
 public class PlainWings implements Wings {
 
     public String getName() {
-        return "Wings";
+        return "component.Wings";
     }
 
     public String getDescription() {
