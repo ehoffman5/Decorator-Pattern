@@ -3,12 +3,12 @@
 public class PlainWings implements Wings {
 
     public String getDescription() {
-        return "Tasty vegan seitan wings.";
+        return "Tasty vegan seitan wings";
     }
 
     public double getCost() {
-        System.out.println("Base Price: $" + 6.00);
-        return 6.00;
+        System.out.println("Base Price: $" + 5.00);
+        return 5.00;
     }
 
 }
