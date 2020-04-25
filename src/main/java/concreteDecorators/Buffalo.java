@@ -11,7 +11,7 @@ public class Buffalo extends SauceDecorator {
 
     // Returns getName() of concreteComponent.PlainWings and concatenates the sauce name at the beginning
     public String getName() {
-        return "concreteDecorators.Buffalo " + tempWings.getName();
+        return "Buffalo " + tempWings.getName();
     }
 
     // Returns getDescription() of concreteComponent.PlainWings and concatenates the sauce at the end

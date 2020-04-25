@@ -5,7 +5,7 @@ import component.Wings;
 public class PlainWings implements Wings {
 
     public String getName() {
-        return "component.Wings";
+        return "Wings";
     }
 
     public String getDescription() {

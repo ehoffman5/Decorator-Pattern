@@ -11,7 +11,7 @@ public class Teriyaki extends SauceDecorator {
 
     // Returns getName() of concreteComponent.PlainWings and concatenates the sauce name at the beginning
     public String getName() {
-        return "concreteDecorators.Teriyaki " + tempWings.getName();
+        return "Teriyaki " + tempWings.getName();
     }
 
     // Returns getDescription() of concreteComponent.PlainWings and concatenates the sauce description at the end
